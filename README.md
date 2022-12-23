@@ -1,10 +1,10 @@
-# calculadora # 
+# Calculadora
 
 
 
 ## Screenshots
 
-![App Screenshot](/images/screenshot.jpg)
+![App Screenshot](/image/screenshot.jpg)
 
 
 ## Stack utilizada
