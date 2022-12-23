@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-color: #42474a;
+  --calc-bg-color: #222526;
+  --btn-num-color: #313235;
+  --btn-fun-color: #00e6f6;
+  --font-color: #f1f5f9;
+  --btn-color: #121212;
+  --primary-color: #4dff91;
+  --error-color: #ff0043;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  font-family: "Ubuntu", sans-serif;
+}
+
+main {
+  display: block;
+  margin: 6rem auto;
+  padding: 0 1.5rem 2.5rem;
+  position: relative;
+  max-width: 25rem;
+  background-color: var(--calc-bg-color);
+  border-radius: 1rem;
+}
+
+header {
+  padding: 2rem 0;
+}
+
+#themeSwitcher {
+  background-color: var(--calc-bg-color);
+  border: 0.125rem solid var(--font-color);
+  color: var(--font-color);
+  border-radius: 0.25rem;
+}
+
+#themeSwitcher:hover {
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  transition: 0.15s;
+  background-color: var(--font-color);
+  color: var(--bg-color);
+}
+
+input {
+  background-color: var(--calc-bg-color);
+  border: none;
+  color: var(--font-color);
+  display: block;
+  font-size: 1.75rem;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: end;
+  width: 100%;
+  border-bottom: 2px var(--font-color) solid;
+}
+
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+button {
+  border: none;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  transition: 0.15s;
+}
+
+.charKey {
+  border: none;
+  border-radius: 0.25rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  transition: 0.15s;
+  background-color: var(--btn-num-color);
+  color: #fff;
+}
+
+.fun-btn {
+  background-color: var(--btn-fun-color);
+  color: var(--btn-color);
+}
+
+#keys {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+#keys button {
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+#keys button:hover {
+  filter: brightness(0.8);
+}
+
+.result-area {
+  border-bottom: 2px var(--font-color) solid;
+}
+
+#copyToClipboard {
+  background-color: transparent;
+  border-bottom: 2px var(--font-color) solid;
+  color: var(--font-color);
+  cursor: pointer;
+  display: block;
+  height: 4.2rem;
+  width: 6rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: center;
+}
+
+.error {
+  background-color: var(--error-color);
+}
+
+.success {
+  color: var(--primary-color) !important;
+}
