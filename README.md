@@ -4,7 +4,7 @@
 
 ## Screenshots
 
-![App Screenshot](./images/screenshot.jpg)
+![App Screenshot](/images/screenshot.jpg)
 
 
 ## Stack utilizada
